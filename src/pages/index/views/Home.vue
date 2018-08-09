@@ -22,7 +22,6 @@ export default {
     HelloWorld,
   },
   created() {
-    console.log(this.msg);
     console.log(this.imgUrl);
   },
 };
