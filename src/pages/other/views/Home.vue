@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <img src="../../../assets/logo.png">
+    <!--<img src="../../../assets/logo.png">-->
     <HelloWorld :msg="msg"/>
   </div>
 </template>
@@ -13,7 +13,7 @@ export default {
   name: 'home',
   data() {
     return {
-      msg: '时空年龄菲尼克斯',
+      msg: 'other时空年龄菲尼克斯',
     };
   },
   components: {

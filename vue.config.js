@@ -1,4 +1,3 @@
-
 const path = require('path');
 
 function resolve(dir) {
@@ -8,10 +7,10 @@ function resolve(dir) {
 module.exports = {
   // 项目在服务器的根目录
   baseUrl: process.env.NODE_ENV === 'production'
-    ? '/my-app/build'
+    ? '/multi-page-Vue/dist'
     : '/',
   // 打包目录
-  outputDir: 'build',
+  outputDir: 'dist',
   // 打包后静态资源存放目录，默认为""
   assetsDir: 'static',
   lintOnSave: true,
@@ -20,6 +19,18 @@ module.exports = {
       .set('@', resolve('src'))
       .set('assets', resolve('src/assets'));
   },
+  // devServer: {
+  //   proxy: {
+  //     // '/api': {
+  //     //   target: '<url>',
+  //     //   ws: true,
+  //     //   changeOrigin: true,
+  //     //   pathRewrite: {
+  //     //     '^/api': ''
+  //     //   }
+  //     // },
+  //   },
+  // },
   pages: {
     index: {
       // page 的入口
