@@ -29,26 +29,26 @@ module.exports = {
     vuxLoader.merge(config, {
       plugins: [
         'vux-ui',
-        {
+	      {
           name: 'duplicate-style',
           options: {
-            cssProcessorOptions : {
+            cssProcessorOptions: {
               safe: true,
               zindex: false,
               autoprefixer: {
                 add: true,
                 browsers: [
                   'iOS >= 7',
-                  'Android >= 4.1'
-                ]
-              }
-            }
-          }
-        },
-	      {
-		      name: 'less-theme',
-		      path: 'src/common/styles/theme.less' // 相对项目根目录路径
+                  'Android >= 4.1',
+                ],
+              },
+            },
+          },
 	      },
+	      {
+          name: 'less-theme',
+          path: 'src/common/styles/theme.less', // 相对项目根目录路径
+        },
       ],
     });
     if (process.env.NODE_ENV === 'production') {
@@ -66,7 +66,7 @@ module.exports = {
 
   css: {
     extract: true,
-	  sourceMap: false
+    sourceMap: false,
   },
 
   // devServer: {
@@ -100,5 +100,5 @@ module.exports = {
 
   runtimeCompiler: undefined,
   productionSourceMap: undefined,
-  parallel: undefined
+  parallel: undefined,
 };

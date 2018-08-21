@@ -3,3 +3,15 @@
     <h1>This is an other about page</h1>
   </div>
 </template>
+
+<script>
+export default {
+  name: 'about',
+};
+</script>
+
+<style scoped lang="less">
+    h1 {
+        color: @main-font-color;
+    }
+</style>
