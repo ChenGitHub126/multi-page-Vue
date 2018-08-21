@@ -8,7 +8,7 @@
 <script>
 // @ is an alias to /src
 import HelloWorld from '@/components/HelloWorld.vue';
-import img from 'assets/logo.png';
+import img from '_assets/logo.png';
 
 export default {
   name: 'home',
